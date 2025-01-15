@@ -1,0 +1,95 @@
+.button {
+	width: 11rem;
+	height: 11rem;
+	border-radius: 100%;
+	border: none;
+	box-shadow: 0 7px 0 0 hsl(229, 25%, 31%, 0.2) inset;
+}
+
+.paper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	background: var(--Paper-Gradient);
+	box-shadow: 0 -8px 0 0 hsl(230, 97%, 54%) inset;
+}
+
+.scissors {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	background: var(--Scissors-Gradient);
+	box-shadow: 0 -8px 0 0 hsl(39, 84%, 74%) inset;
+}
+
+.rock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	background: var(--Rock-Gradient);
+	box-shadow: 0 -8px 0 0 hsl(349, 96%, 47%) inset;
+}
+
+.image {
+	width: 5rem;
+}
+
+@media (max-width: 767px) {
+	.button {
+		width: 6rem;
+		height: 6rem;
+	}
+	.paper,
+	.scissors,
+	.rock {
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.image {
+		width: 3.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.button {
+		width: 5rem;
+		height: 5rem;
+	}
+	.paper,
+	.scissors,
+	.rock {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.image {
+		width: 2.5rem;
+	}
+}
+
+@media (max-width: 350px) {
+	.button {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+	.paper,
+	.scissors,
+	.rock {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.image {
+		width: 2rem;
+	}
+}

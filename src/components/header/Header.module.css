@@ -1,0 +1,49 @@
+.header {
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+	border: 3px solid var(--Header-Outline);
+	border-radius: 10px;
+	width: 50%;
+	padding: 1rem;
+
+	@media (max-width: 1024px) {
+		width: 100%;
+		padding: 0.5rem;
+	}
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	line-height: 0.8;
+
+	@media (max-width: 500px) {
+		font-size: 1.5rem;
+	}
+}
+
+.scoreContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	color: var(--Score-Text);
+	width: 7rem;
+	height: 5rem;
+	letter-spacing: 1px;
+	line-height: 0.8;
+	font-size: 0.8rem;
+	border-radius: 5px;
+
+	@media (max-width: 500px) {
+		width: 4rem;
+		height: 4rem;
+	}
+}
+.score {
+	color: var(--Dark-Text);
+	font-size: 2.8rem;
+}

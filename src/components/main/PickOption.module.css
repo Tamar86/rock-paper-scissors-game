@@ -1,0 +1,82 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 3.5rem;
+	position: relative;
+
+	@media (max-width: 500px) {
+		padding: 1.5rem;
+	}
+}
+
+.paper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	background: var(--Paper-Gradient);
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	@media (max-width: 500px) {
+		width: 8rem;
+		height: 8rem;
+	}
+}
+
+.scissors {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	background: var(--Scissors-Gradient);
+	position: absolute;
+	right: 0;
+	top: 0;
+	@media (max-width: 500px) {
+		width: 8rem;
+		height: 8rem;
+	}
+}
+
+.rock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	background: var(--Rock-Gradient);
+	position: absolute;
+	bottom: 0;
+	@media (max-width: 500px) {
+		width: 8rem;
+		height: 8rem;
+	}
+}
+
+.button {
+	width: 7.5rem;
+	height: 7.5rem;
+	border-radius: 100%;
+	border: none;
+
+	@media (max-width: 500px) {
+		width: 5.5rem;
+		height: 5.5rem;
+	}
+}
+
+.triangle {
+	@media (max-width: 500px) {
+		width: 15.5rem;
+	}
+}

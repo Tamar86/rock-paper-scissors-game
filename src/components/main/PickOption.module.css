@@ -6,61 +6,39 @@
 	position: relative;
 	padding: 3.5rem;
 	position: relative;
+}
 
-	@media (max-width: 500px) {
-		padding: 1.5rem;
-	}
+.paper,
+.scissors,
+.rock {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	transition: all 0.3s ease-in-out;
 }
 
 .paper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10rem;
-	height: 10rem;
-	border-radius: 100%;
 	background: var(--Paper-Gradient);
-	position: absolute;
 	left: 0;
 	top: 0;
-
-	@media (max-width: 500px) {
-		width: 8rem;
-		height: 8rem;
-	}
+	box-shadow: 0 -8px 0 0 hsl(230, 97%, 54%) inset;
 }
 
 .scissors {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10rem;
-	height: 10rem;
-	border-radius: 100%;
 	background: var(--Scissors-Gradient);
-	position: absolute;
 	right: 0;
 	top: 0;
-	@media (max-width: 500px) {
-		width: 8rem;
-		height: 8rem;
-	}
+	box-shadow: 0 -8px 0 0 hsl(39, 84%, 74%) inset;
 }
 
 .rock {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10rem;
-	height: 10rem;
-	border-radius: 100%;
 	background: var(--Rock-Gradient);
-	position: absolute;
+	box-shadow: 0 -8px 0 0 hsl(349, 96%, 47%) inset;
 	bottom: 0;
-	@media (max-width: 500px) {
-		width: 8rem;
-		height: 8rem;
-	}
 }
 
 .button {
@@ -68,15 +46,56 @@
 	height: 7.5rem;
 	border-radius: 100%;
 	border: none;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 7px 0 0 hsl(229, 25%, 31%, 0.2) inset;
+}
 
-	@media (max-width: 500px) {
+.paper:hover,
+.scissors:hover,
+.rock:hover {
+	width: 11rem;
+	height: 11rem;
+}
+
+.paper:hover button,
+.scissors:hover button,
+.rock:hover button {
+	width: 8.5rem;
+	height: 8.5rem;
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding: 1.5rem;
+	}
+
+	.paper,
+	.scissors,
+	.rock {
+		width: 8rem;
+		height: 8rem;
+	}
+
+	.paper:hover,
+	.scissors:hover,
+	.rock:hover {
+		width: 9rem;
+		height: 9rem;
+	}
+
+	.paper:hover button,
+	.scissors:hover button,
+	.rock:hover button {
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+
+	.button {
 		width: 5.5rem;
 		height: 5.5rem;
 	}
-}
 
-.triangle {
-	@media (max-width: 500px) {
+	.triangle {
 		width: 15.5rem;
 	}
 }

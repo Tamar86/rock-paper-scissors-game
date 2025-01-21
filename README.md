@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/rock-paper-scissors-game-built-with-vite---react---redux-fAgnFXPVEI)
-- Live Site URL: [](https://rock-paper-scissors-game-sooty-omega.vercel.app/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/rock-paper-scissors-game-built-with-vite---react---redux-fAgnFXPVEI)
+- Live Site URL: [Vercel](https://rock-paper-scissors-game-sooty-omega.vercel.app/)
 
 ## My process
 
